@@ -7,7 +7,6 @@ import { TestimonialCarousel } from "@/components/testimonial-carousel";
 import { Investimento } from "@/components/mendoza/investimento";
 import { FAQMendoza } from "@/components/mendoza/faq-mendoza";
 import { WhatsAppCtaSection } from "@/components/whatsapp-cta-section";
-import { Footer } from "@/components/layout/footer";
 import { WhatsAppFloating } from "@/components/whatsapp-floating";
 
 export default function MendozaPage() {
@@ -79,10 +78,7 @@ export default function MendozaPage() {
       
       {/* CTA Final */}
       <WhatsAppCtaSection />
-      
-      {/* Footer */}
-      <Footer />
-      
+            
       {/* WhatsApp Flutuante */}
       <WhatsAppFloating />
     </main>

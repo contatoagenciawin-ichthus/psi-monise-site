@@ -7,7 +7,6 @@ import { PhotoGallery } from "@/components/photo-gallery";
 import { TestimonialCarousel } from "@/components/testimonial-carousel";
 import { WhatsAppCtaSection } from "@/components/whatsapp-cta-section";
 import { WhatsAppFloating } from "@/components/whatsapp-floating";
-import { Footer } from "@/components/layout/footer";
 
 export default function Home() {
   return (
@@ -67,10 +66,7 @@ export default function Home() {
       
       {/* CTA Final */}
       <WhatsAppCtaSection />
-      
-      {/* Footer */}
-      <Footer />
-      
+            
       {/* WhatsApp Flutuante */}
       <WhatsAppFloating />
     </main>

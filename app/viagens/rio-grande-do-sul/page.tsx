@@ -1,7 +1,6 @@
 import { ParallaxGalleryRS } from "@/components/parallax-gallery-rs";
 import { TestimonialCarousel } from "@/components/testimonial-carousel";
 import { WhatsAppCtaSection } from "@/components/whatsapp-cta-section";
-import { Footer } from "@/components/layout/footer";
 import { WhatsAppFloating } from "@/components/whatsapp-floating";
 
 export default function RioGrandeDoSulPage() {
@@ -85,9 +84,6 @@ export default function RioGrandeDoSulPage() {
 
       {/* CTA WhatsApp */}
       <WhatsAppCtaSection />
-
-      {/* Footer */}
-      <Footer />
 
       {/* WhatsApp Flutuante */}
       <WhatsAppFloating />
