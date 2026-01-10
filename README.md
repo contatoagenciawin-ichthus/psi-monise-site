@@ -19,4 +19,3 @@ Premium marketing website for **Empório Liasch** (Americana/SP): an intimate wi
 ```bash
 npm install
 npm run dev
-![Desktop](public/preview/desktop.png)
