@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Phone, Mail, Instagram, Clock } from "lucide-react";
+import { Phone, Mail, Instagram, Clock, Globe } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-wood text-cream border-t border-gold/20">
+    <footer className="bg-[#6E6E6E] text-[#F5F3EF] border-t border-[#A8B8A3]/20">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -13,35 +13,37 @@ export function Footer() {
           {/* Coluna 1: Logo e Descrição */}
           <div className="lg:col-span-2">
             <div className="mb-6">
+              {/* Logo integrada com filtro para visibilidade no fundo escuro */}
               <Image
-                src="/images/logo-emporio-liasch-light.png"
-                alt="Empório Liasch"
-                width={200}
-                height={67}
-                className="h-auto"
+                src="/images/logo.png"
+                alt="Monise Ribeiro Psicanalista"
+                width={180}
+                height={54}
+                className="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-90"
+                priority
               />
             </div>
-            <p className="text-cream/70 leading-relaxed mb-6 max-w-md">
-              Um universo exclusivo de vinhos, bistrô e viagens inesquecíveis 
-              em Americana/SP. Tradição construída com 20 anos de profissionalismo.
+            <p className="text-[#F5F3EF]/70 leading-relaxed mb-6 max-w-md">
+              Acolhimento psicanalítico online para mulheres que buscam um espaço seguro de escuta, 
+              respeito e profundidade emocional para olhar para si com mais consciência e verdade [cite: 6-7, 68-69].
             </p>
             
             {/* Redes Sociais */}
             <div className="flex items-center gap-4">
               <a
-                href="https://www.instagram.com/emporio.liasch/"
+                href="https://www.instagram.com/moni_riibeiro/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-cream/10 hover:bg-gold rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+                className="w-10 h-10 bg-[#F5F3EF]/10 hover:bg-[#A8B8A3] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://wa.me/5519997088241"
+                href="https://wa.me/5519982129344"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-cream/10 hover:bg-gold rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+                className="w-10 h-10 bg-[#F5F3EF]/10 hover:bg-[#A8B8A3] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
                 aria-label="WhatsApp"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -51,62 +53,53 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Coluna 2: Contato */}
+          {/* Coluna 2: Atendimento */}
           <div>
-            <h3 className="text-lg font-bold text-gold mb-6 uppercase tracking-wider">
-              Contato
+            <h3 className="text-sm font-bold text-[#A8B8A3] mb-6 uppercase tracking-widest">
+              Atendimento
             </h3>
             <div className="space-y-4">
-              <a
-                href="https://maps.google.com/?q=Rua+Cabo+Oswaldo+de+Moraes,+42,+Americana+-+SP"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-start gap-3 text-cream/80 hover:text-gold transition-colors group"
-              >
-                <MapPin className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+              <div className="flex items-start gap-3 text-[#F5F3EF]/80 group">
+                <Globe className="w-5 h-5 text-[#A8B8A3] flex-shrink-0 mt-0.5" />
                 <span className="text-sm leading-relaxed">
-                  Rua Cabo Oswaldo de Moraes, 42<br />
-                  Americana - SP<br />
-                  CEP: 13466-030
+                  Modalidade Online<br />
+                  Acolhimento em qualquer lugar,<br />
+                  no conforto do seu espaço[cite: 46, 108].
                 </span>
+              </div>
+
+              <a
+                href="tel:+5519982129344"
+                className="flex items-center gap-3 text-[#F5F3EF]/80 hover:text-[#A8B8A3] transition-colors"
+              >
+                <Phone className="w-5 h-5 text-[#A8B8A3] flex-shrink-0" />
+                <span className="text-sm">(19) 98212-9344</span>
               </a>
 
               <a
-                href="tel:+5519997088241"
-                className="flex items-center gap-3 text-cream/80 hover:text-gold transition-colors"
+                href="mailto:contato@moniseribeiro.com.br"
+                className="flex items-center gap-3 text-[#F5F3EF]/80 hover:text-[#A8B8A3] transition-colors"
               >
-                <Phone className="w-5 h-5 text-gold flex-shrink-0" />
-                <span className="text-sm">(19) 99708-8241</span>
-              </a>
-
-              <a
-                href="mailto:contato@emporioliasch.com.br"
-                className="flex items-center gap-3 text-cream/80 hover:text-gold transition-colors"
-              >
-                <Mail className="w-5 h-5 text-gold flex-shrink-0" />
-                <span className="text-sm break-all">contato@emporioliasch.com.br</span>
+                <Mail className="w-5 h-5 text-[#A8B8A3] flex-shrink-0" />
+                <span className="text-sm break-all">contato@moniseribeiro.com.br</span>
               </a>
             </div>
           </div>
 
-          {/* Coluna 3: Horários */}
+          {/* Coluna 3: Sessões */}
           <div>
-            <h3 className="text-lg font-bold text-gold mb-6 uppercase tracking-wider">
-              Horários
+            <h3 className="text-sm font-bold text-[#A8B8A3] mb-6 uppercase tracking-widest">
+              Sessões
             </h3>
             <div className="flex items-start gap-3">
-              <Clock className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
-              <div className="text-sm text-cream/80 space-y-2">
+              <Clock className="w-5 h-5 text-[#A8B8A3] flex-shrink-0 mt-1" />
+              <div className="text-sm text-[#F5F3EF]/80 space-y-2">
                 <p>
-                  <strong className="text-cream">Terça a Sexta:</strong><br />
-                  14h às 22h
+                  <strong className="text-[#F5F3EF]">Horários Flexíveis</strong><br />
+                  Mediante agendamento prévio.
                 </p>
-                <p>
-                  <strong className="text-cream">Sábado:</strong><br />
-                  10h às 18h
-                </p>
-                <p className="text-cream/60 text-xs mt-3">
-                  Domingos e segundas: Fechado
+                <p className="text-[#F5F3EF]/60 text-xs mt-3 italic">
+                  "O cuidado acontece no seu ritmo, respeitando sua história e seus limites"[cite: 40, 102].
                 </p>
               </div>
             </div>
@@ -115,24 +108,24 @@ export function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-cream/10">
+      <div className="border-t border-[#F5F3EF]/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-cream/60">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-[#F5F3EF]/60">
             <p>
-              © {new Date().getFullYear()} Empório Liasch. Todos os direitos reservados.
+              © {new Date().getFullYear()} Monise Ribeiro. Todos os direitos reservados.
             </p>
             <div className="flex items-center gap-6">
               <Link 
                 href="/politica-privacidade" 
-                className="hover:text-gold transition-colors"
+                className="hover:text-[#A8B8A3] transition-colors"
               >
-                Política de Privacidade
+                Privacidade
               </Link>
               <Link 
                 href="/termos-uso" 
-                className="hover:text-gold transition-colors"
+                className="hover:text-[#A8B8A3] transition-colors"
               >
-                Termos de Uso
+                Termos
               </Link>
             </div>
           </div>

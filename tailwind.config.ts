@@ -8,17 +8,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
+
       colors: {
-        // Paleta Oficial Empório Liasch (Manual de Marca)
-        wine: {
-          DEFAULT: "#74113a", // Pantone 229 C
-          dark: "#4a0b25",    // Contraste escuro
-          light: "#9b2c5a",   // Hover states
-        },
-        cream: "#F9F8F3",     // Fundo Off-white
-        wood: "#2C1810",      // Marrom Café (Texto)
-        gold: "#C5A065",      // Detalhes Premium
-      },
+        sage: "#A8B8A3",
+        "off-white": "#F5F3EF",
+        nude: "#E8D4CC",
+        "soft-brown": "#8C6A5D",
+        "warm-gray": "#6E6E6E",
+    },
+// Atualize a fonte principal para títulos
+fontFamily: {
+  serif: ["var(--font-playfair)", "serif"], // Playfair Display [cite: 156, 234]
+  sans: ["Inter", "sans-serif"], // Inter para facilitar leitura [cite: 162, 240]
+},
       fontFamily: {
         serif: ["var(--font-playfair)", "serif"],
         sans: ["var(--font-open-sans)", "sans-serif"],

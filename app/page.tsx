@@ -1,73 +1,50 @@
-import { HeroWineBar } from "@/components/hero-wine-bar";
-import { BrandIntro } from "@/components/home/brand-intro";
-import { SobreEmporio } from "@/components/home/sobre-emporio";
-import { ParallaxSection } from "@/components/layout/parallax-section";
-import { BannerMendozaTeaser } from "@/components/home/banner-mendoza-teaser";
-import { PhotoGallery } from "@/components/photo-gallery";
-import { TestimonialCarousel } from "@/components/testimonial-carousel";
-import { WhatsAppCtaSection } from "@/components/whatsapp-cta-section";
+import { HeroTherapy } from "@/components/HeroTherapy";
+import { EmotionalWelcome } from "@/components/home/EmotionalWelcome";
+import { SobreMonise } from "@/components/home/SobreMonise";
+import { PhilosophicalQuote } from "@/components/layout/PhilosophicalQuote";
+import { OnlineBenefits } from "@/components/home/OnlineBenefits";
+import { ProcessoAcolhimento } from "@/components/home/ProcessoAcolhimento";
+import { AcolhimentoSocial } from "@/components/AcolhimentoSocial";
+import { FinalCtaSection } from "@/components/FinalCtaSection";
 import { WhatsAppFloating } from "@/components/whatsapp-floating";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      {/* Hero Principal */}
-      <HeroWineBar />
+    <main className="min-h-screen bg-[#F5F3EF]">
+      {/* 1. Impacto Inicial e Acolhimento */}
+      <HeroTherapy />
       
-      {/* Brand Intro (Respiro entre hero e parallax) */}
-      <BrandIntro />
+      {/* 2. Validação das Dores (Empatia) */}
+      <EmotionalWelcome />
       
-      {/* Parallax: Tradição */}
-      <ParallaxSection
-        imageUrl="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940"
-        title="Uma tradição construída com"
-        highlight="20 anos de profissionalismo"
-        subtitle="em bons vinhos"
+      {/* 3. Citação Filosófica (Respiro Visual) */}
+      <PhilosophicalQuote
+        imageUrl="https://images.unsplash.com/photo-1516307361728-422c5d9a8b72?q=80&w=2940"
+        title="Crescer emocionalmente é aceitar que"
+        highlight="sentir não nos enfraquece..."
+        subtitle="ao contrário, é quando damos lugar ao afeto que a mente encontra descanso."
         darkOverlay
       />
       
-      {/* Sobre o Empório */}
-      <SobreEmporio />
+      {/* 4. Autoridade e Biografia */}
+      <SobreMonise />
       
-      {/* Banner Urgente Mendoza */}
-      <BannerMendozaTeaser />
+      {/* 5. Como Funciona (O novo componente FAQ/Accordion) */}
+      <ProcessoAcolhimento />
+
+      {/* 6. Benefícios do Formato Online */}
+      <OnlineBenefits />
       
-      {/* Parallax: Experiências */}
-      <ParallaxSection
-        imageUrl="https://images.unsplash.com/photo-1533052472566-487661858a47?q=80&w=1000"
-        title="Do Rio Grande do Sul"
-        highlight="à Argentina"
-        subtitle="Experiências que transformam momentos em memórias"
-        goldHighlight
-      />
+      {/* 7. Galeria de Atmosfera (Imagens Introspectivas) */}
+    
       
-      {/* Galeria RS (Preview - 6 fotos) */}
-      <section className="py-24 bg-cream">
-        <div className="max-w-7xl mx-auto px-6 text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-serif text-wine mb-6">
-            Rio Grande do Sul • 2025
-          </h2>
-          <p className="text-lg text-wood/70 max-w-2xl mx-auto">
-            Um grupo apaixonado por vinho, dias inesquecíveis, memórias eternas.
-          </p>
-        </div>
-        <PhotoGallery />
-      </section>
+      {/* 8. Prova Social e Relatos */}
+      <AcolhimentoSocial />
       
-      {/* Depoimentos */}
-      <section className="py-24 bg-wine/5">
-        <div className="max-w-7xl mx-auto px-6 text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-serif text-wine mb-6">
-            Alguns Depoimentos
-          </h2>
-        </div>
-        <TestimonialCarousel />
-      </section>
-      
-      {/* CTA Final */}
-      <WhatsAppCtaSection />
+      {/* 9. Convite Final ao Cuidado */}
+      <FinalCtaSection />
             
-      {/* WhatsApp Flutuante */}
+      {/* 10. Suporte Flutuante */}
       <WhatsAppFloating />
     </main>
   );

@@ -6,43 +6,16 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --wine: #74113a;
-  --cream: #f9f8f3;
-  --wood: #2c1810;
-  --gold: #c5a065;
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.984 0.003 247.858);
-  --sidebar-foreground: oklch(0.129 0.042 264.695);
-  --sidebar-primary: oklch(0.208 0.042 265.755);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.968 0.007 247.896);
-  --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
-  --sidebar-border: oklch(0.929 0.013 255.508);
-  --sidebar-ring: oklch(0.704 0.04 256.788);
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  /* Cores da Monise Ribeiro */
+  --sage: #A8B8A3;      /* Verde Sálvia: equilíbrio */
+  --off-white: #F5F3EF; /* Conforto e leveza */
+  --nude: #E8D4CC;      /* Feminilidade madura */
+  --soft-brown: #8C6A5D;/* Estabilidade emocional */
+  --warm-gray: #6E6E6E; /* Texto e sofisticação */
+  
+  --background: var(--off-white);
+  --foreground: var(--warm-gray);
+  --radius: 1.25rem; /* Bordas mais arredondadas para suavidade */
 }
 
 @theme inline {
