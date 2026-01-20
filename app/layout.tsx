@@ -21,8 +21,8 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Empório Liasch | Vinhos e Experiências",
-  description: "Mais que vinhos, momentos. Experiências que ficam para sempre.",
+  title: "Monise Ribeiro | Psicanálise Clínica",
+  description: "Acolhimento psicanalítico online para mulheres.",
   generator: "v0.app",
   icons: {
     icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
